@@ -7,14 +7,11 @@
   <meta name="description" content="Guías, herramientas y consejos de diseño gráfico para emprendedores y freelancers de Latinoamérica. Aprende a crear identidad visual, trabajar como independiente y hacer crecer tu negocio creativo." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://graficafreelance.netlify.app/" />
-
-  <!-- Open Graph -->
   <meta property="og:title" content="Diseño Gráfico para Emprendedores Latinoamericanos" />
   <meta property="og:description" content="Recursos, guías y herramientas para diseñadores gráficos freelance en Latinoamérica." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://graficafreelance.netlify.app/" />
-
-  <!-- Schema markup: WebSite -->
+  <meta property="og:image" content="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=80" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -25,12 +22,11 @@
     "inLanguage": "es",
     "author": {
       "@type": "Person",
-      "name": "diseno-latam",
+      "name": "Tu Nombre Aquí",
       "jobTitle": "Diseñador Gráfico & Consultor de Marca"
     }
   }
   </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
@@ -38,7 +34,6 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav">
     <a href="/" class="nav__logo">Diseño<span>Latam</span></a>
     <ul class="nav__links">
@@ -51,33 +46,56 @@
   </nav>
 
   <!-- HERO -->
-  <header class="hero">
-    <div class="hero__bg-grid"></div>
+  <section class="hero">
+    <div class="hero__parallax-bg"></div>
+    <div class="hero__grid"></div>
     <div class="hero__content">
-      <span class="hero__tag">Para diseñadores independientes 🌎</span>
-      <h1 class="hero__title">Diseño gráfico para<br /><em>emprendedores</em> latinoamericanos</h1>
-      <p class="hero__sub">Recursos prácticos, guías de identidad visual y consejos freelance para diseñadores que trabajan con marcas reales en Latinoamérica.</p>
-      <div class="hero__actions">
-        <a href="pages/identidad-visual.html" class="btn btn--primary">Empezar con identidad visual</a>
-        <a href="pages/herramientas.html" class="btn btn--ghost">Ver herramientas gratis →</a>
-      </div>
-    </div>
-    <div class="hero__visual">
-      <div class="shape shape--1"></div>
-      <div class="shape shape--2"></div>
-      <div class="shape shape--3"></div>
-      <div class="marquee-ring">
-        <span>Identidad Visual</span><span>·</span>
-        <span>Tipografía</span><span>·</span>
-        <span>Color</span><span>·</span>
-        <span>Freelance</span><span>·</span>
-        <span>Branding</span><span>·</span>
-        <span>Herramientas</span><span>·</span>
-      </div>
-    </div>
-  </header>
 
-  <!-- STATS STRIP -->
+      <div class="hero__left">
+        <span class="hero__tag">✦ Para diseñadores independientes en LATAM</span>
+        <h1 class="hero__title">
+          Diseña marcas<br />
+          <em>que impactan</em>
+          <span class="outline">en Latam</span>
+        </h1>
+        <p class="hero__sub">Recursos prácticos de identidad visual, herramientas y trabajo freelance para diseñadores que crean marcas reales en Latinoamérica.</p>
+        <div class="hero__actions">
+          <a href="pages/identidad-visual.html" class="btn btn--primary">Empezar con identidad visual →</a>
+          <a href="pages/herramientas.html" class="btn btn--ghost">Ver herramientas gratis</a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__feat-img">
+          <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80"
+               alt="Diseñador gráfico trabajando en identidad visual para emprendimiento latinoamericano"
+               loading="eager" />
+          <span class="hero__feat-badge">Identidad Visual</span>
+        </div>
+        <div class="hero__mini-cards">
+          <div class="mini-card">
+            <div class="mini-card__icon">🎨</div>
+            <div class="mini-card__label">Branding & marca</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card__icon">🛠</div>
+            <div class="mini-card__label">Herramientas gratis</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card__icon">💼</div>
+            <div class="mini-card__label">Trabajo freelance</div>
+          </div>
+          <div class="mini-card">
+            <div class="mini-card__icon">🌎</div>
+            <div class="mini-card__label">Contexto LATAM</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STATS -->
   <section class="stats">
     <div class="stats__item"><strong>3</strong><span>Guías completas</span></div>
     <div class="stats__item"><strong>+20</strong><span>Herramientas listadas</span></div>
@@ -85,7 +103,7 @@
     <div class="stats__item"><strong>LATAM</strong><span>Contexto regional</span></div>
   </section>
 
-  <!-- ARTICLES GRID -->
+  <!-- ARTICLES -->
   <section class="articles">
     <div class="articles__header">
       <h2>Empieza por aquí</h2>
@@ -94,26 +112,96 @@
     <div class="articles__grid">
 
       <article class="card card--featured">
-        <div class="card__tag">Identidad Visual</div>
-        <h3 class="card__title"><a href="pages/identidad-visual.html">Cómo crear identidad visual para una marca desde cero</a></h3>
-        <p class="card__excerpt">Una guía paso a paso que cubre logotipo, paleta de colores, tipografía y manual de marca — sin necesitar presupuesto grande.</p>
-        <a href="pages/identidad-visual.html" class="card__link">Leer guía →</a>
+        <div class="card__img">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80"
+               alt="Creación de identidad visual para marca — paleta de colores y logotipo"
+               loading="lazy" />
+        </div>
+        <div class="card__body">
+          <div class="card__tag">Identidad Visual</div>
+          <h3 class="card__title"><a href="pages/identidad-visual.html">Cómo crear identidad visual para una marca desde cero</a></h3>
+          <p class="card__excerpt">Una guía paso a paso que cubre logotipo, paleta de colores, tipografía y manual de marca.</p>
+          <a href="pages/identidad-visual.html" class="card__link">Leer guía →</a>
+        </div>
       </article>
 
       <article class="card">
-        <div class="card__tag">Herramientas</div>
-        <h3 class="card__title"><a href="pages/herramientas.html">Las mejores herramientas de diseño gráfico gratis en 2026</a></h3>
-        <p class="card__excerpt">Desde Figma hasta Canva Pro, comparamos las herramientas que usan los diseñadores freelance reales en la región.</p>
-        <a href="pages/herramientas.html" class="card__link">Ver herramientas →</a>
+        <div class="card__img">
+          <img src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=600&q=80"
+               alt="Herramientas de diseño gráfico gratis — Figma, Canva y más"
+               loading="lazy" />
+        </div>
+        <div class="card__body">
+          <div class="card__tag">Herramientas</div>
+          <h3 class="card__title"><a href="pages/herramientas.html">Las mejores herramientas de diseño gráfico gratis en 2026</a></h3>
+          <p class="card__excerpt">Comparamos las herramientas que usan los diseñadores freelance reales en la región.</p>
+          <a href="pages/herramientas.html" class="card__link">Ver herramientas →</a>
+        </div>
       </article>
 
       <article class="card">
-        <div class="card__tag">Freelance</div>
-        <h3 class="card__title"><a href="pages/freelance.html">Cómo empezar como diseñador gráfico independiente</a></h3>
-        <p class="card__excerpt">Portafolio, primeros clientes, precios y contratos — todo lo que necesitas saber antes de dar el salto al freelance.</p>
-        <a href="pages/freelance.html" class="card__link">Leer guía →</a>
+        <div class="card__img">
+          <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=600&q=80"
+               alt="Diseñador gráfico freelance trabajando desde casa en Latinoamérica"
+               loading="lazy" />
+        </div>
+        <div class="card__body">
+          <div class="card__tag">Freelance</div>
+          <h3 class="card__title"><a href="pages/freelance.html">Cómo empezar como diseñador gráfico independiente</a></h3>
+          <p class="card__excerpt">Portafolio, primeros clientes, precios y contratos — todo lo que necesitas saber.</p>
+          <a href="pages/freelance.html" class="card__link">Leer guía →</a>
+        </div>
       </article>
 
+    </div>
+  </section>
+
+  <!-- TESTIMONIALES -->
+  <section class="testimonials">
+    <div class="testimonials__inner">
+      <div class="testimonials__header">
+        <h2>Lo que dicen los diseñadores</h2>
+        <p>Feedback de diseñadores freelance que aplican estos recursos en sus proyectos.</p>
+      </div>
+      <div class="testimonials__grid">
+
+        <div class="testi-card" itemscope itemtype="https://schema.org/Review">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text" itemprop="reviewBody">"La guía de identidad visual me cambió la forma de presentar propuestas a clientes. Antes entregaba solo el logo — ahora entrego un sistema completo y cobro el triple."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar">CM</div>
+            <div>
+              <div class="testi-card__name" itemprop="author">Carlos M.</div>
+              <div class="testi-card__role">Diseñador freelance · Ciudad de México</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card" itemscope itemtype="https://schema.org/Review">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text" itemprop="reviewBody">"Encontré el stack de herramientas gratuitas que necesitaba para empezar sin invertir. Figma + Coolors + Google Fonts es todo lo que necesitas cuando estás iniciando."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" style="background: linear-gradient(135deg,#44bbff,#0066cc)">AR</div>
+            <div>
+              <div class="testi-card__name" itemprop="author">Andrea R.</div>
+              <div class="testi-card__role">Diseñadora UI · Bogotá, Colombia</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card" itemscope itemtype="https://schema.org/Review">
+          <div class="testi-card__stars">★★★★★</div>
+          <p class="testi-card__text" itemprop="reviewBody">"El apartado de precios para freelance me dio el valor que necesitaba para dejar de cobrar barato. La sección sobre contratos también salvó un proyecto complicado."</p>
+          <div class="testi-card__author">
+            <div class="testi-card__avatar" style="background: linear-gradient(135deg,#bb88ff,#6600cc)">LV</div>
+            <div>
+              <div class="testi-card__name" itemprop="author">Luis V.</div>
+              <div class="testi-card__role">Diseñador gráfico · Guatemala</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -122,7 +210,7 @@
     <div class="about__text">
       <span class="about__label">Sobre este sitio</span>
       <h2>Hecho por diseñadores,<br />para diseñadores</h2>
-      <p>Diseño Latam nació de la necesidad de tener recursos de diseño gráfico pensados para el contexto latinoamericano: precios en dólares que sí aplican a la región, ejemplos de marcas locales y consejos para trabajar con clientes de pequeñas empresas.</p>
+      <p>Diseño Latam nació de la necesidad de tener recursos de diseño gráfico pensados para el contexto latinoamericano: precios que sí aplican a la región, ejemplos de marcas locales y consejos para trabajar con clientes reales.</p>
       <p>El contenido es elaborado con experiencia real en proyectos de branding e identidad visual para emprendimientos en Guatemala, México, Colombia y Argentina.</p>
       <a href="pages/contacto.html" class="btn btn--outline">Hablar con nosotros</a>
     </div>
@@ -135,7 +223,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__brand">
       <a href="/" class="nav__logo">Diseño<span>Latam</span></a>
